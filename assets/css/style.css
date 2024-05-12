@@ -39,16 +39,17 @@
 @media screen and (max-width: 800px) {
     .container .section {
         position: relative;
-        height: 50vh;
-        max-width: 250px;
-        margin-bottom: 0%;
+        height: 36vh;
+        /* max-width: 4em; */
+        padding-top: 26%;
       }
 
     .logo {
         font-family: 'DM Mono', monospace;
-        font-size: 6em;
-        /* padding-top: 1em; */
+        font-size: 4em;
     }
+
+h1.logo.hide-lg.hide-xl {}
 
     .caption {
         font-size: 10px;
