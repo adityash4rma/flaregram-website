@@ -1,25 +1,23 @@
-
 .container {
-    /* position: relative; */
-    /* width: 100%; */
-    /* height: 100vh; */
-    overflow: auto;
+    box-sizing: border-box;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 48px 16px;
 }
 
 .container .section {
-    position: relative;
-    height: 50vh;
-    max-width: 900em;
-    margin-top: 150px;
-    margin: auto;
-    justify-content: center;
-  }
-
+    width: 100%;
+}
 
 .logo {
     font-family: 'DM Mono', monospace;
     font-size: 7em;
-    padding-top: 3em;
+    margin: 0;
 }
 
 .theme_btn {
@@ -37,27 +35,14 @@
 }
 
 @media screen and (max-width: 800px) {
-    .container .section {
-        position: relative;
-        height: 36vh;
-        /* max-width: 4em; */
-        padding-top: 26%;
-      }
-
     .logo {
-        font-family: 'DM Mono', monospace;
         font-size: 4em;
     }
+}
 
-h1.logo.hide-lg.hide-xl {}
-
-    .caption {
-        font-size: 10px;
-        font-size: x-small;
-        
-    }
-
-    .btn {
-        size: 15px;
+/* Keep the wordmark inside very narrow screens without changing its font. */
+@media screen and (max-width: 360px) {
+    .logo {
+        font-size: 15vw;
     }
 }
